@@ -44,6 +44,8 @@
     }
 
     #info{
+      padding-top: 70px;
+      padding-left: 50px;
       background-color: aquamarine;
       width: 600px;
       height: 250px;
@@ -56,7 +58,17 @@
       justify-content: center;
     }
 
-  
+    .one, .two, .three{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: blue;
+      height: 50px;
+      width: 59px;
+      margin-right: 20px;
+      border-radius: 10px;
+    }
+
     img{
       position: absolute;
       top: 60%;
@@ -87,6 +99,26 @@
       height: 20px;
       border-radius: 50%;
       width: 20px;
+    }
+
+    .conversation {
+        width: 400px; /* Adjust width as needed */
+        margin: 20px auto; /* Center the conversation */
+        border: 2px solid #ccc; /* Border for the conversation box */
+        padding: 10px;
+        background-color: #f9f9f9; /* Background color for the conversation */
+    }
+
+    .message {
+        margin-bottom: 10px; /* Spacing between messages */
+    }
+
+    .sender {
+        color: #333; /* Color for sender's messages */
+    }
+
+    .receiver {
+        color: #007bff; /* Color for receiver's messages */
     }
   </style>
 </head>
@@ -126,6 +158,5 @@
 
 </main>
 
-</div>
 </body>
 </html>
