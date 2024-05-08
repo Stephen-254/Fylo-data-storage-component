@@ -50,6 +50,7 @@
       width: 600px;
       height: 250px;
       border-radius: 20px;
+      position: relative;
     }
 
     figure{
@@ -114,8 +115,27 @@
       width: 0;
       height: 0;
       border-left: 50px solid transparent;
-      border-right: 20px solid transparent;
-      border-bottom: 90px solid red;
+      border-right: 0 solid transparent;
+      border-bottom: 70px solid whitesmoke;
+      transform: rotate(900deg);
+      position: absolute;
+      left: 101px;
+    }
+
+    .conversation-box{
+      position: relative;
+      border-radius: 10px;
+      text-align: center;
+      padding-top: 20px;
+      font-weight: 700;
+      font-size: larger;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .left{
+      position: absolute;
+      top: 170px;
+      left: 800px;
     }
   </style>
 </head>
@@ -153,10 +173,12 @@
   </div>
 </section>
 
-<div class="conversation-box">
-  185GB 
-  <div class="triangle"></div>
-</div>
+
+<section class="left">
+  <div class="conversation-box">185 GB Left
+    <div class="triangle"></div>
+  </div>
+</section>
 </main> 
 </body>
 </html>
