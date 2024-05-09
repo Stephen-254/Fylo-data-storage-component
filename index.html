@@ -37,18 +37,18 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      background-color: lightblue;
+      background-color: hsl(228, 56%, 26%);
       width: 360px;
-      height: 250px;
+      height: 220px;
       border-top-right-radius: 150px;
     }
 
     #info{
       padding-top: 70px;
       padding-left: 50px;
-      background-color: aquamarine;
+      background-color: hsl(228, 56%, 26%);
       width: 600px;
-      height: 250px;
+      height: 220px;
       border-radius: 20px;
       position: relative;
     }
@@ -63,7 +63,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: blue;
+      background-color: hsl(229, 57%, 11%);
       height: 50px;
       width: 59px;
       margin-right: 20px;
@@ -80,7 +80,7 @@
     .main-bar{
       display: flex;
       align-items: center;
-      background-color: hsl(228, 56%, 26%);
+      background-color: hsl(229, 57%, 11%);
       height: 20px;
       border-radius: 20px;
       width: 500px;
@@ -137,6 +137,29 @@
       top: 170px;
       left: 800px;
     }
+
+    .gb{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .gb h2{
+      margin-right: 50px;
+    }
+
+    @media (max-width: 320px){
+      main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .background img{
+        height: 100vh;
+        width: 100vw;
+      }
+    }
   </style>
 </head>
 <body>
@@ -170,6 +193,11 @@
     <div class="progress-bar">
       <div class="progress-dot"></div>
     </div> 
+  </div>
+
+  <div class="gb">
+    <h1>0</h1>
+    <h2>1000GB</h2>
   </div>
 </section>
 
