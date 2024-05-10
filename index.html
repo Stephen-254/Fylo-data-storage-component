@@ -22,10 +22,11 @@
 
     main{
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 0.4fr 0.4fr;
       align-items: center;
       justify-items: center;
       padding-top: 200px;
+      margin-left: 150px;
     }
 
     .background{
@@ -40,7 +41,10 @@
       background-color: hsl(228, 56%, 26%);
       width: 360px;
       height: 220px;
-      border-top-right-radius: 150px;
+      border-top-right-radius: 130px;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
 
     #info{
@@ -126,6 +130,7 @@
       position: relative;
       border-radius: 10px;
       text-align: center;
+      justify-content: center;
       padding-top: 20px;
       font-weight: 700;
       font-size: larger;
@@ -135,7 +140,7 @@
     .left{
       position: absolute;
       top: 170px;
-      left: 800px;
+      left: 85em;
     }
 
     .gb{
@@ -147,17 +152,32 @@
       margin-right: 50px;
     }
 
-    @media (max-width: 320px){
+    @media screen and (min-width: 320px) {
+
+      body{
+        background-image: url(images/bg-mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .background img, .conversation-box div{
+        display: none;
+      }
+      #info{
+        position: relative;
+        margin-top: 50px;
+      }
+
+      .left{
+        position: absolute;
+        left: 150px;
+        top: 37em;
+      }
       main{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-      }
-
-      .background img{
-        height: 100vh;
-        width: 100vw;
       }
     }
   </style>
