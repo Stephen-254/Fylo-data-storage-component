@@ -16,21 +16,17 @@
     }
 
     body{
-      overflow-x: hidden;
       background-color: hsl(229, 57%, 11%);
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
     }
 
     main{
-      display: grid;
-      grid-template-columns: 0.4fr 0.4fr;
+      display: flex;
+      justify-content: center;
       align-items: center;
-      justify-items: center;
-      padding-top: 200px;
-      margin-left: 150px;
-    }
-
-    .background{
-      width: 100%;
+      padding-top: 30em;
     }
 
     #banner{
@@ -47,11 +43,13 @@
       border-bottom-right-radius: 10px;
     }
 
+    
+
     #info{
       padding-top: 70px;
       padding-left: 50px;
       background-color: hsl(228, 56%, 26%);
-      width: 600px;
+      max-width: 600px;
       height: 220px;
       border-radius: 20px;
       position: relative;
@@ -139,8 +137,8 @@
 
     .left{
       position: absolute;
-      top: 170px;
-      left: 85em;
+      left: 350px;
+      top: -30px;
     }
 
     .gb{
@@ -150,35 +148,6 @@
 
     .gb h2{
       margin-right: 50px;
-    }
-
-    @media screen and (min-width: 320px) {
-
-      body{
-        background-image: url(images/bg-mobile.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-
-      .background img, .conversation-box div{
-        display: none;
-      }
-      #info{
-        position: relative;
-        margin-top: 50px;
-      }
-
-      .left{
-        position: absolute;
-        left: 150px;
-        top: 37em;
-      }
-      main{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
     }
   </style>
 </head>
@@ -219,13 +188,13 @@
     <h1>0</h1>
     <h2>1000GB</h2>
   </div>
-</section>
 
-
-<section class="left">
-  <div class="conversation-box">185 GB Left
-    <div class="triangle"></div>
-  </div>
+  <!--The number of GBs left-->
+  <section class="left">
+    <div class="conversation-box">185 GB Left
+      <div class="triangle"></div>
+    </div>
+  </section>
 </section>
 </main> 
 </body>
